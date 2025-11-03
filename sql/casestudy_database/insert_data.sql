@@ -67,13 +67,14 @@ VALUES
 (default,"Room");
 #dich_vu
 INSERT INTO dich_vu 
+(ten_dich_vu, dien_tich, chi_phi_thue, so_nguoi_toi_da, tieu_chuan_phong, mo_ta_tien_nghi_khac, dien_tich_ho_boi, so_tang, ma_kieu_thue, ma_loai_dich_vu)
 VALUES
-(default,'Villa Beach Front', 25000, 10000000, 10, 'vip', 'Có hồ bơi', 500, 4, 3, 1),
-(default,'House Princess 01', 14000, 5000000, 7, 'vip', 'Có thêm bếp nướng', NULL, 3, 2, 2),
-(default,'Room Twin 01', 5000, 1000000, 2, 'normal', 'Có tivi', NULL, NULL, 4, 3),
-(default,'Villa No Beach Front', 22000, 9000000, 8, 'normal', 'Có hồ bơi', 300, 3, 3, 1),
-(default,'House Princess 02', 10000, 4000000, 5, 'normal', 'Có thêm bếp nướng', NULL, 2, 3, 2),
-(default,'Room Twin 02', 3000, 900000, 2, 'normal', 'Có tivi', NULL, NULL, 4, 3);
+('Villa Beach Front', 25000, 10000000, 10, 'vip', 'Có hồ bơi', 500, 4, 3, 1),
+('House Princess 01', 14000, 5000000, 7, 'vip', 'Có thêm bếp nướng', NULL, 3, 2, 2),
+('Room Twin 01', 5000, 1000000, 2, 'normal', 'Có tivi', NULL, NULL, 4, 3),
+('Villa No Beach Front', 22000, 9000000, 8, 'normal', 'Có hồ bơi', 300, 3, 3, 1),
+('House Princess 02', 10000, 4000000, 5, 'normal', 'Có thêm bếp nướng', NULL, 2, 3, 2),
+('Room Twin 02', 3000, 900000, 2, 'normal', 'Có tivi', NULL, NULL, 4, 3);
 #dich_vu_di_kem
 INSERT INTO dich_vu_di_kem 
 VALUES
@@ -86,21 +87,24 @@ VALUES
 #hop_dong
 INSERT INTO hop_dong 
 VALUES
-(default,'2020-12-08', '2020-12-08', 0, 3, 1, 3),
-(default,'2020-07-14', '2020-07-21', 200000, 7, 3, 1),
-(default,'2021-03-15', '2021-03-17', 50000, 3, 4, 2),
-(default,'2021-01-14', '2021-01-18', 100000, 7, 5, 5),
-(default,'2021-07-14', '2021-07-15', 0, 7, 2, 6),
-(default,'2021-06-01', '2021-06-03', 0, 7, 4, 6),
-(default,'2021-09-02', '2021-09-05', 100000, 7, 4, 1),
-(default,'2021-06-17', '2021-06-18', 150000, 3, 4, 1),
-(default,'2020-11-19', '2020-11-19', 0, 3, 4, 3),
-(default,'2021-04-12', '2021-04-14', 0, 10, 3, 5),
-(default,'2021-04-25', '2021-04-25', 0, 2, 2, 1),
-(default,'2021-05-25', '2021-05-27', 0, 7, 10, 1);
+(1,'2020-12-08', '2020-12-08', 0, 3, 1, 3),
+(2,'2020-07-14', '2020-07-21', 200000, 7, 3, 1),
+(3,'2021-03-15', '2021-03-17', 50000, 3, 4, 2),
+(4,'2021-01-14', '2021-01-18', 100000, 7, 5, 5),
+(5,'2021-07-14', '2021-07-15', 0, 7, 2, 6),
+(6,'2021-06-01', '2021-06-03', 0, 7,7, 6),
+(7,'2021-09-02', '2021-09-05', 100000, 7, 4, 4),
+(8,'2021-06-17', '2021-06-18', 150000, 3, 4, 1),
+(9,'2020-11-19', '2020-11-19', 0, 3, 4, 3),
+(10,'2021-04-12', '2021-04-14', 0, 10, 3, 5),
+(11,'2021-04-25', '2021-04-25', 0, 2, 2, 1),
+(12,'2021-05-25', '2021-05-27', 0, 7, 10, 1);
+
+
 #hop_dong_chi_tiet
-INSERT INTO hop_dong_chi_tiet 
-VALUES 
+
+INSERT INTO hop_dong_chi_tiet (so_luong, ma_hop_dong, ma_dich_vu_di_kem)
+VALUES
 (5, 2, 4),
 (8, 2, 5),
 (15, 2, 6),
@@ -109,6 +113,13 @@ VALUES
 (1, 1, 3),
 (2, 1, 2),
 (2, 12, 2);
+
+
+
+
+
+
+
 
 
 
