@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.navbar {
+    background: #222;
+    color: white;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.menu li {
+    margin-right: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.menu .active {
+    background: black;
+}
+
+.login {
+    color: #ccc;
+    cursor: pointer;
+}
+
+/* MAIN LAYOUT */
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+/* LEFT SIDEBAR */
+.left {
+    width: 12%;
+    padding: 10px;
+}
+
+.left a {
+    display: block;
+    margin-bottom: 10px;
+    color: #3366ff;
+}
+
+/* CONTENT */
+.content {
+    background: white;
+    padding: 20px;
+    width: 66%;
+    margin: 0 20px;
+    box-shadow: 0 0 3px #ccc;
+}
+
+/* RIGHT SIDEBAR */
+.right {
+    width: 15%;
+}
+
+.ads-box {
+    background: #eeeeee;
+    padding: 40px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
